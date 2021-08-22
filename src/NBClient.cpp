@@ -165,7 +165,7 @@ int NBClient::ready()
 
     case CLIENT_STATE_CLOSE_SOCKET: {
 
-      MODEM.sendf("AT+USOCL=%d", _socket);
+      MODEM.sendf("AT+USOCL=%d,1", _socket);
 
       _state = CLIENT_STATE_WAIT_CLOSE_SOCKET;
       ready = 0;
@@ -436,7 +436,7 @@ void NBClient::stop()
     return;
   }
 
-  MODEM.sendf("AT+USOCL=%d", _socket);
+  MODEM.sendf("AT+USOCL=%d,1", _socket);
   MODEM.waitForResponse(10000);
 
   NBSocketBuffer.close(_socket);
