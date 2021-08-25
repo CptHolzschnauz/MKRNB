@@ -20,7 +20,7 @@ Constructor: Example: NBMqtt mqtt;
 
 getMQTTerror Get the last MQTT error from the modem.Example: mqtt.getMQTTerror();  
 
-setMQTTClientID  Set the MQTT client ID : Use your SIM IMEI. Example: mqtt.setMQTTClientID("352753090834234");  
+setMQTTClientID  Set the MQTT client ID : Example(With SIM IMEI): mqtt.setMQTTClientID("352753090834234");  
 
 setMQTTPort(Int): Set the clients MQTT Port (Normally not enrcypted is 1883, SSL is 8883. Example:  mqtt.setMQTTPort(1883);  
 
@@ -50,8 +50,6 @@ Set last will
 SSL
 
 == License ==
-
-Copyright (c) 2018 Arduino SA. All rights reserved.
 
 This library is free software; you can redistribute it and/or
 modify it under the terms of the GNU Lesser General Public
