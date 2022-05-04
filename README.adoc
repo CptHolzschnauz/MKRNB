@@ -47,7 +47,7 @@ Set Timeouts
 
 Set last will  
 
-SSL
+SSL is not possible because MQTTS is NOT supported by UBlox...
 
 == License ==
 
